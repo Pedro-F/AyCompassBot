@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: AyCompassBot
+  host: AyCompassBot
+  disk_quota: 1024M
+  services:
+  - Conversation-7c
+  - Natural Language Classifier-as
+  env:
+    NPM_CONFIG_PRODUCTION: 'false'
+  command: npm start
